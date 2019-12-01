@@ -1,37 +1,21 @@
-import React from "react";
+/**
+ * Footer
+ * 
+ * Pure component which does not need any access to redux to be displayed
+ */
 
+import React from "react";
 import FILTER from "./VisibilityFilter";
-const FilterButton = ({ changeFilter, activeFilter, filterName }) => {
-  return (
-    <button
-      onClick={() => {
-        changeFilter(filterName);
-      }}
-      disabled={activeFilter === filterName}
-    >
-      {filterName}
-    </button>
-  );
-};
-const Footer = ({ onFilterChange, activeFilter }) => {
+import FilterButton from "../containers/FilterButton";
+
+const Footer = () => {
   return (
     <div>
-      <FilterButton
-        changeFilter={onFilterChange}
-        activeFilter={activeFilter}
-        filterName={FILTER.ALL}
-      />
-      <FilterButton
-        changeFilter={onFilterChange}
-        activeFilter={activeFilter}
-        filterName={FILTER.COMPLETED}
-      />
-      <FilterButton
-        changeFilter={onFilterChange}
-        activeFilter={activeFilter}
-        filterName={FILTER.PENDING}
-      />
+      <FilterButton filter={FILTER.ALL} />
+      <FilterButton filter={FILTER.COMPLETED} />
+      <FilterButton filter={FILTER.PENDING} />
     </div>
   );
 };
+
 export default Footer;
