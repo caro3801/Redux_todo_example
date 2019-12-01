@@ -1,9 +1,10 @@
 > This project is part of the Redux course for L3MIASHS at UT2J.
 
 # install
+```
 npm install 
 npm run start
-
+```
 # Todolist example
 
 This project contains two branches :
