@@ -1,7 +1,7 @@
 /**
  * Actions names
- * 
- * This file contains all the action names that will be used 
+ *
+ * This file contains all the action names that will be used
  * in the app. They are exported as variable to facilitate reuse without typos
  */
 

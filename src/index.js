@@ -1,9 +1,9 @@
 /**
  * Index.js
- * 
+ *
  * The entrypoint of the application
- * Creates the redux store and 
- * wraps the app in the store provider 
+ * Creates the redux store and
+ * wraps the app in the store provider
  */
 
 import React from "react";
@@ -16,11 +16,11 @@ import App from "./components/App";
 
 const store = createStore(
   rootReducer, // the reducer
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // to work with the redux dev tools extension 
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() // to work with the redux dev tools extension
 );
 
 render(
-  <Provider store={store}> 
+  <Provider store={store}>
     <App />,
   </Provider>,
   document.getElementById("root")

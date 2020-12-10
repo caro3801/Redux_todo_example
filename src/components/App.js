@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import Footer from "../components/Footer";
-import AddTodo from "../containers/AddTodo";
-import VisibleTodoList from "../containers/VisibleTodoList";
+import AddTodo from "./AddTodo";
+import VisibleTodoList from "./TodoList";
 
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <AddTodo />
         <VisibleTodoList />
         <Footer />
-      </div>
+      </>
     );
   }
 }

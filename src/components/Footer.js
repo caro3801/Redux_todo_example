@@ -1,12 +1,12 @@
 /**
  * Footer
- * 
+ *
  * Pure component which does not need any access to redux to be displayed
  */
 
 import React from "react";
 import FILTER from "./VisibilityFilter";
-import FilterButton from "../containers/FilterButton";
+import { FilterButton } from "./FilterButton";
 
 const Footer = () => {
   return (
